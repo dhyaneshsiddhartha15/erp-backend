@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r tsconfig-paths/register src/server.ts"
+    "dev": "nodemon -r tsconfig-paths/register src/server.ts",
     "build": "tsc",  // This compiles TypeScript files to the dist/ folder
-    "start": "node dist/server.js"  // This starts the compiled JavaScript file
+    "start": "node dist/server.js",  // This starts the compiled JavaScript file
   },
   "keywords": [],
   "author": "",

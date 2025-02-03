@@ -28,3 +28,199 @@
     at Generator.next (<anonymous>)
     at fulfilled (D:\PROJECTS\ABELYF\ERP\erp-backend\src\controllers\user.controllers.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-03 14:29:25 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/route.ts[0m:[93m3[0m:[93m10[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'inventoryRoutes'.
+
+[7m3[0m import { inventoryRoutes } from "./routes/inventory";
+[7m [0m [91m         ~~~~~~~~~~~~~~~[0m
+[96msrc/route.ts[0m:[93m4[0m:[93m10[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'inventoryRoutes'.
+
+[7m4[0m import { inventoryRoutes } from "./routes/inventory";
+[7m [0m [91m         ~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:29:56 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m1[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module '../models/Warehouse.model' or its corresponding type declarations.
+
+[7m1[0m import Warehouse from "../models/Warehouse.model";
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:30:09 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m1[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module '../models/Warehouse.model' or its corresponding type declarations.
+
+[7m1[0m import Warehouse from "../models/Warehouse.model";
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:30:21 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m1[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module '../models/Warehouse.model' or its corresponding type declarations.
+
+[7m1[0m import Warehouse from "../models/Warehouse.model";
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:31:06 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/rushd/OneDrive/Desktop/AbleLYF/All Marts/erp-backend/src/models/Warehouse"' has no default export.
+
+[7m1[0m import Warehouse from "../models/Warehouse";
+[7m [0m [91m       ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:31:20 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m1[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module '../models/Warehouse.model' or its corresponding type declarations.
+
+[7m1[0m import Warehouse from "../models/Warehouse.model";
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:31:40 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/rushd/OneDrive/Desktop/AbleLYF/All Marts/erp-backend/src/models/Warehouse"' has no default export.
+
+[7m1[0m import Warehouse from "../models/Warehouse";
+[7m [0m [91m       ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:32:42 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/rushd/OneDrive/Desktop/AbleLYF/All Marts/erp-backend/src/models/Warehouse"' has no default export.
+
+[7m1[0m import Warehouse from "../models/Warehouse";
+[7m [0m [91m       ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:33:30 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/rushd/OneDrive/Desktop/AbleLYF/All Marts/erp-backend/src/models/Warehouse"' has no default export.
+
+[7m1[0m import Warehouse from "../models/Warehouse";
+[7m [0m [91m       ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:34:05 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/models/Warehouse.ts[0m:[93m11[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Warehouse'.
+
+[7m11[0m export default Warehouse;
+[7m  [0m [91m               ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:34:46 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/models/Warehouse.ts[0m:[93m10[0m:[93m34[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IInventory'.
+
+[7m10[0m const Warehouse = mongoose.model<IInventory>('Warehouse', warehouseSchema);
+[7m  [0m [91m                                 ~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+2025-02-03 14:34:57 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/repositories/warehouseRepository.ts[0m:[93m55[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'currentStock' does not exist on type 'Document<unknown, {}, IWarehouse> & IWarehouse & Required<{ _id: unknown; }> & { __v: number; }'.
+
+[7m55[0m         if ((fromWarehouse.currentStock ?? 0) < stockQuantity) {
+[7m  [0m [91m                           ~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\rushd\OneDrive\Desktop\AbleLYF\All Marts\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)

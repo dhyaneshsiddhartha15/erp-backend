@@ -7,4 +7,5 @@ const warehouseSchema:Schema <IWarehouse>=new mongoose.Schema({
   zones: [{ type: String }], 
   createdAt: { type: Date, default: Date.now },
 })
-module.exports = mongoose.model('Warehouse', warehouseSchema);
+const Warehouse = mongoose.model<IWarehouse>('Warehouse', warehouseSchema);
+export default Warehouse;

@@ -15,6 +15,10 @@ export const inventorySchema = Joi.object({
         "any.required": "Current stock is required",
         "number.min": "Current stock cannot be negative",
     }),
+    threshold: Joi.number().min(0).required().messages({ 
+        "any.required": "Threshold value is required",
+        "number.min": "Threshold must be a non-negative number",
+    }),
     batchNumber: Joi.string().optional().messages({
         "string.base": "Batch number should be a string",
     }),

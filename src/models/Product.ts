@@ -34,10 +34,15 @@ const productSchema: Schema = new Schema<IProduct>(
       type: Number,
       default: 0,
     },
-    warehouse: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Warehouse',
-      required: true, 
+    // warehouse: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: 'Warehouse',
+    //   required: true, 
+    // },
+    status: {
+      type: String,
+      enum: ["instock", "sold", "in_transit", "delivered"],
+      default: "instock",
     },
   },
   {

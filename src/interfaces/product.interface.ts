@@ -1,4 +1,4 @@
-import mongoose, { Document} from "mongoose";
+import mongoose, { Document } from "mongoose";
 
 export interface IProduct extends Document {
   name: string;
@@ -8,7 +8,8 @@ export interface IProduct extends Document {
   category: string;
   qrCode: string;
   stocks: number;
-  warehouse: mongoose.Types.ObjectId; 
+  warehouse: mongoose.Types.ObjectId;
+  status: "instock" | "sold" | "in_transit" | "delivered";
   createdAt: Date;
   updatedAt: Date;
 }

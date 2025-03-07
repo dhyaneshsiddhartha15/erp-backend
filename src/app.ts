@@ -18,7 +18,7 @@ app.use(cors({
 }));   // Enable CORS
 
 // Request Parsing
-app.use(json());
+app.use(express.json());
 app.use(urlencoded({ extended: true }));
 
 // Logging

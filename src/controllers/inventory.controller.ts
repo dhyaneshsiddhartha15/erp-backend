@@ -47,7 +47,7 @@ export async function updateInventory(req: Request, res: Response): Promise<void
         const updatedInventory: IInventory | null = await inventoryService.modifyInventory(inventoryId, updatedData);
 
         if (!updatedInventory) {
-       res.status(StatusCodes.NOT_FOUND).json({
+        res.status(StatusCodes.NOT_FOUND).json({
                 message: "Inventory not found",
             });
         }
@@ -113,7 +113,7 @@ export async function getInventoryById(req: Request, res: Response): Promise<voi
         const inventory = await inventoryService.getInventory(inventoryId);
 
         if (!inventory) {
-       res.status(StatusCodes.NOT_FOUND).json({
+        res.status(StatusCodes.NOT_FOUND).json({
                 message: "Inventory not found",
             });
         }

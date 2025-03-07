@@ -304,3 +304,57 @@
     at Module.load (node:internal/modules/cjs/loader:1289:32)
     at Function._load (node:internal/modules/cjs/loader:1108:12)
     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-03-03 11:42:05 [error]: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:278:15)
+    at F:\ERP\erp-backend\erp-backend\dist\controllers\inventory.controller.js:41:79
+    at Generator.throw (<anonymous>)
+    at rejected (F:\ERP\erp-backend\erp-backend\dist\controllers\inventory.controller.js:6:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-03-03 14:13:31 [error]: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:278:15)
+    at F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:32:21
+    at Generator.throw (<anonymous>)
+    at rejected (F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-03-03 14:17:14 [error]: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:278:15)
+    at F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:32:21
+    at Generator.throw (<anonymous>)
+    at rejected (F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-03-03 14:17:52 [error]: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:278:15)
+    at F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:32:21
+    at Generator.throw (<anonymous>)
+    at rejected (F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-03-03 14:23:21 [error]: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:278:15)
+    at F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:32:21
+    at Generator.next (<anonymous>)
+    at fulfilled (F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-03-03 17:27:55 [error]: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (F:\ERP\erp-backend\erp-backend\node_modules\express\lib\response.js:278:15)
+    at F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:31:21
+    at Generator.throw (<anonymous>)
+    at rejected (F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)

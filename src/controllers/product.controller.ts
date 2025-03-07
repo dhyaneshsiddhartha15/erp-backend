@@ -5,11 +5,12 @@ import { Request, Response } from "express";
 
 export async function addProduct(req: Request, res: Response): Promise<void>{
   try {
+    console.log("📩 Received product data:", req.body); // Log request data
     const { name, description, price, sku, category, stocks, status } = req.body;
 
     // Check for required fields
     if (!name || !description || !price || !sku || !category ) {
-      res.status(400).json({ message: "All fields (name, description, price, sku, category, warehouse) are required!" });
+      res.status(400).json({ message: "All fields (name, description, price, sku, category) are required!" });
     }
 
     const product = new Product({
@@ -23,9 +24,10 @@ export async function addProduct(req: Request, res: Response): Promise<void>{
     });
 
     await product.save();
+    console.log("✅ Product added:", product);
     res.status(201).json({ message: "Product added successfully!", product });
   } catch (error) {
-    console.log("Erro is ",error);
+    console.log("Erro is addProduct:",error);
     res.status(500).json({ message: "Error adding product", error });
   }
 };

@@ -3,7 +3,6 @@ import { authRoutes } from "./routes/auth";
 import { inventoryRoutes } from "./routes/inventory";
 import { warehouseRoutes } from "./routes/warehouse";
 import { productRoutes } from "./routes/product";
-// import { productRoutes }  from "./routes/product";
 
 const AUTH_BASE_PATH='/api/v1/auth';
 const INV_BASE_PATH='/api/v1/inventory';

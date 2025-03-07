@@ -6,10 +6,10 @@ import { Request, Response } from "express";
 export async function addProduct(req: Request, res: Response): Promise<void>{
   try {
     console.log("📩 Received product data:", req.body); // Log request data
-    const { name, description, price, sku, category, stocks, status } = req.body;
+    const { name, description, price, sku, category, stocks, status, warehouse } = req.body;
 
     // Check for required fields
-    if (!name || !description || !price || !sku || !category ) {
+    if (!name || !description || !price || !sku || !category || !warehouse) {
       res.status(400).json({ message: "All fields (name, description, price, sku, category) are required!" });
     }
 
@@ -21,6 +21,7 @@ export async function addProduct(req: Request, res: Response): Promise<void>{
       category,
       stocks: stocks || 0, // Default to 0 if not provided
       status: status || "instock", // Default status
+      warehouse,
     });
 
     await product.save();
@@ -36,7 +37,7 @@ export async function addProduct(req: Request, res: Response): Promise<void>{
 // READ all products
 export async function getProducts(req: Request, res: Response): Promise<void> {
   try {
-    const products = await Product.find();
+    const products = await Product.find().populate("warehouse", "name");
     res.status(200).json({ success: true, data: products });
   } catch (error) {
     res.status(500).json({ success: false, message: (error as Error).message });
@@ -46,7 +47,7 @@ export async function getProducts(req: Request, res: Response): Promise<void> {
 // READ a single product by ID
 export async function getProductById(req: Request, res: Response): Promise<void> {
   try {
-    const product = await Product.findById(req.params.id);
+    const product = await Product.findById(req.params.id).populate("warehouse", "name");
     if (!product) {
       res.status(404).json({ success: false, message: "Product not found" });
       return;

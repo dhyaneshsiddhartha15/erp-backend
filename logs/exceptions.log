@@ -358,3 +358,193 @@
     at Generator.throw (<anonymous>)
     at rejected (F:\ERP\erp-backend\erp-backend\src\controllers\product.controller.ts:6:65)
     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-03-05 21:12:44 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m13[0m - [91merror[0m[90m TS7031: [0mBinding element 'name' implicitly has an 'any' type.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m            ~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m19[0m - [91merror[0m[90m TS7031: [0mBinding element 'description' implicitly has an 'any' type.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                  ~~~~~~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m32[0m - [91merror[0m[90m TS7031: [0mBinding element 'price' implicitly has an 'any' type.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                               ~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m39[0m - [91merror[0m[90m TS7031: [0mBinding element 'sku' implicitly has an 'any' type.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                      ~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m44[0m - [91merror[0m[90m TS7031: [0mBinding element 'category' implicitly has an 'any' type.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                           ~~~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m54[0m - [91merror[0m[90m TS7031: [0mBinding element 'stocks' implicitly has an 'any' type.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                                     ~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m62[0m - [91merror[0m[90m TS7031: [0mBinding element 'status' implicitly has an 'any' type.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                                             ~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m70[0m - [91merror[0m[90m TS7031: [0mBinding element 'warehouse' implicitly has an 'any' type.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                                                     ~~~~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m12[0m:[93m10[0m - [91merror[0m[90m TS1345: [0mAn expression of type 'void' cannot be tested for truthiness.
+
+[7m12[0m     if (!name || !description || !price || !sku || !category ) {
+[7m  [0m [91m         ~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m12[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'description'.
+
+[7m12[0m     if (!name || !description || !price || !sku || !category ) {
+[7m  [0m [91m                  ~~~~~~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m12[0m:[93m35[0m - [91merror[0m[90m TS2304: [0mCannot find name 'price'.
+
+[7m12[0m     if (!name || !description || !price || !sku || !category ) {
+[7m  [0m [91m                                  ~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m12[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'sku'.
+
+[7m12[0m     if (!name || !description || !price || !sku || !category ) {
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m12[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'category'.
+
+[7m12[0m     if (!name || !description || !price || !sku || !category ) {
+[7m  [0m [91m                                                    ~~~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m18[0m:[93m7[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'description'. Either declare one or provide an initializer.
+
+[7m18[0m       description,
+[7m  [0m [91m      ~~~~~~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m19[0m:[93m7[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'price'. Either declare one or provide an initializer.
+
+[7m19[0m       price,
+[7m  [0m [91m      ~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'sku'. Either declare one or provide an initializer.
+
+[7m20[0m       sku,
+[7m  [0m [91m      ~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m21[0m:[93m7[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'category'. Either declare one or provide an initializer.
+
+[7m21[0m       category,
+[7m  [0m [91m      ~~~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m22[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'stocks'.
+
+[7m22[0m       stocks: stocks || 0, // Default to 0 if not provided
+[7m  [0m [91m              ~~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m31[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'res'.
+
+[7m31[0m     res.status(500).json({ message: "Error adding product", error });
+[7m  [0m [91m    ~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m80[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                                                               ~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m83[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                                                                  ~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m85[0m - [91merror[0m[90m TS2809: [0mDeclaration or statement expected. This '=' follows a block of statements, so if you intended to write a destructuring assignment, you might need to wrap the whole assignment in parentheses.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                                                                    ~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m9[0m:[93m87[0m - [91merror[0m[90m TS1472: [0m'catch' or 'finally' expected.
+
+[7m9[0m     const { name, description, price, sku, category, stocks, status, warehouse || } = req.body;
+[7m [0m [91m                                                                                      ~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m29[0m:[93m5[0m - [91merror[0m[90m TS1005: [0m'try' expected.
+
+[7m29[0m   } catch (error) {
+[7m  [0m [91m    ~~~~~[0m
+[96msrc/controllers/product.controller.ts[0m:[93m33[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m33[0m };
+[7m  [0m [91m~[0m
+
+    at createTSError (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1689:10
+    at Object.require.extensions.<computed> [as .ts] (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2025-03-06 03:06:22 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/auth.ts[0m:[93m14[0m:[93m25[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<void>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request, res: Response) => Promise<void>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+[7m14[0m router.get('/managers', async (req: Request, res: Response) => {
+[7m  [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/express-serve-static-core/index.d.ts[0m:[93m164[0m:[93m5[0m
+    [7m164[0m     (path: PathParams, subApplication: Application): T;
+    [7m   [0m [96m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    The last overload is declared here.
+[96msrc/routes/auth.ts[0m:[93m16[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'User'.
+
+[7m16[0m         const managers = await User.find({ role: "manager" }).select("_id name email");
+[7m  [0m [91m                               ~~~~[0m
+[96msrc/routes/auth.ts[0m:[93m17[0m:[93m13[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.
+  Type 'Number' has no call signatures.
+
+[7m17[0m         res.status(200).json({ success: true, users: managers });
+[7m  [0m [91m            ~~~~~~[0m
+[96msrc/routes/auth.ts[0m:[93m20[0m:[93m13[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.
+  Type 'Number' has no call signatures.
+
+[7m20[0m         res.status(500).json({ success: false, message: "Error fetching managers" });
+[7m  [0m [91m            ~~~~~~[0m
+
+    at createTSError (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1689:10
+    at Object.require.extensions.<computed> [as .ts] (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2025-03-06 03:06:44 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/auth.ts[0m:[93m16[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'User'.
+
+[7m16[0m         const managers = await User.find({ role: "manager" }).select("_id name email");
+[7m  [0m [91m                               ~~~~[0m
+
+    at createTSError (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1689:10
+    at Object.require.extensions.<computed> [as .ts] (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2025-03-06 03:30:29 [error]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/auth.ts[0m:[93m15[0m:[93m25[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Promise<...>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+[7m15[0m router.get('/managers', async (req: Request, res: Response) => {
+[7m  [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/express-serve-static-core/index.d.ts[0m:[93m164[0m:[93m5[0m
+    [7m164[0m     (path: PathParams, subApplication: Application): T;
+    [7m   [0m [96m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    The last overload is declared here.
+
+    at createTSError (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1689:10
+    at Object.require.extensions.<computed> [as .ts] (F:\ERP\erp-backend\erp-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)

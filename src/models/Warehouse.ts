@@ -9,3 +9,4 @@ const warehouseSchema:Schema <IWarehouse>=new mongoose.Schema({
 })
 const Warehouse = mongoose.model<IWarehouse>('Warehouse', warehouseSchema);
 export default Warehouse;
+

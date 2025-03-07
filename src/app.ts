@@ -13,7 +13,9 @@ const app: Application = express();
 // Security Middlewares
 app.use(helmet());  // Adds various HTTP headers for security
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:["http://localhost:5173",
+    "https://erp-7fzfqpkse-vaibhavis-projects-a1fefc60.vercel.app"
+  ],
   credentials: true,
 }));   // Enable CORS
 

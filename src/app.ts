@@ -13,11 +13,19 @@ const app: Application = express();
 // Security Middlewares
 app.use(helmet());  // Adds various HTTP headers for security
 app.use(cors({
-  origin:["http://localhost:5173",
-    "https://erp-phi-three.vercel.app"
-  ],
+  origin: (origin, callback) => {
+    const allowedOrigins = [
+      "http://localhost:5173",
+      "https://erp-phi-three.vercel.app"
+    ];
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
-}));   // Enable CORS
+}));
 
 // Request Parsing
 app.use(express.json());
